@@ -1,0 +1,10 @@
+/* Custom blue progress bar */
+.progress-bar.custom-blue {
+  background-color: #91b9ff; /* Bootstrap primary blue */
+  transition: width 0.6s ease;
+}
+
+/* Optional: hover effect */
+.progress-bar.custom-blue {
+    background-color: #91b9ff;
+}
