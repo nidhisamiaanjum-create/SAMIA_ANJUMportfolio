@@ -2517,15 +2517,20 @@ figure figcaption {
   opacity: 1;
 }
 
+..hobbies-section {
+  padding: 60px 0;
+  background-color: #f9f9f9; /* optional */
+}
+
 .hobbies-list {
   display: flex;
   justify-content: center;
-  gap: 30px;       /* smaller gap looks cleaner */
+  gap: 30px;
   flex-wrap: wrap;
 }
 
 .hobby-item {
-  width: 180px;    /* width of the box */
+  width: 180px;       /* fixed box width */
   text-align: center;
   transition: transform 0.3s;
 }
@@ -2535,9 +2540,24 @@ figure figcaption {
 }
 
 .hobby-img {
-  width: 100%;      /* fills the box width */
-  height: auto;     /* maintain aspect ratio */
+  width: 100%;        /* image fits box */
+  height: auto;       /* maintain ratio */
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  margin: 0 0 10px 0; /* only bottom margin, remove top margin */
+  margin-bottom: 10px; /* space under image */
+}
+
+.hobby-item p {
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .hobby-item {
+    width: 140px;
+  }
+  .hobbies-list {
+    gap: 20px;
+  }
 }

@@ -8,6 +8,7 @@
 
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="fonts/icomoon/style.css">
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -408,25 +409,26 @@
     </section>
 
     <section id="hobbies-section" class="hobbies-section" data-aos="fade-up">
-      <div class="container text-center">
-        <h2 class="section-title mb-3" data-aos="fade-down">Hobbies & Creative Works</h2>
+  <div class="container text-center">
+    <h2 class="section-title mb-4" data-aos="fade-down">Hobbies & Creative Works</h2>
 
-        <div class="hobbies-list">
-          <div class="hobby-item">
-            <img src="img/11.jpeg" alt="Clay Doll" class="hobby-img">
-            <p>Clay Doll Craft</p>
-          </div>
-          <div class="hobby-item">
-            <img src="img/12.jpeg" alt="Clay Doll" class="hobby-img">
-            <p>Drawing</p>
-          </div>
-          <div class="hobby-item">
-            <img src="img/13.jpeg" alt="Drawing" class="hobby-img">
-            <p>Sketch</p>
-          </div>
-        </div>
+    <div class="hobbies-list">
+      <div class="hobby-item" data-aos="zoom-in" data-aos-delay="100">
+        <img src="img/11.jpeg" alt="Clay Doll" class="hobby-img">
+        <p>Clay Doll Craft</p>
       </div>
-    </section>
+      <div class="hobby-item" data-aos="zoom-in" data-aos-delay="200">
+        <img src="img/12.jpeg" alt="Drawing" class="hobby-img">
+        <p>Drawing</p>
+      </div>
+      <div class="hobby-item" data-aos="zoom-in" data-aos-delay="300">
+        <img src="img/13.jpeg" alt="Sketch" class="hobby-img">
+        <p>Sketch</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
     <section class="site-section bg-light" id="contact-section" data-aos="fade">
@@ -580,6 +582,14 @@
       once: true
     });
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
 
 
 </body>
