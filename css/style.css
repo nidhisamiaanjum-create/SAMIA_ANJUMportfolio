@@ -2534,10 +2534,10 @@ figure figcaption {
   transform: translateY(-5px);
 }
 
+
 .hobby-img {
-  width: 100%;
+  width: 180px;      /* set a fixed width */
+  height: auto;      /* maintain aspect ratio */
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  margin-top: 80px;
-  margin-bottom: 10px;
 }
