@@ -2072,7 +2072,8 @@ figure figcaption {
 
 #projects-section,
 #skills-section,
-#achievements-section {
+#achievements-section,
+#hobbies-section {
   margin-top: 120px;
 }
 
@@ -2514,4 +2515,29 @@ figure figcaption {
 
 [data-aos].aos-animate {
   opacity: 1;
+}
+
+.hobbies-list {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.hobby-item {
+  width: 180px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.hobby-item:hover {
+  transform: translateY(-5px);
+}
+
+.hobby-img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  margin-top: 80px;
+  margin-bottom: 10px;
 }
